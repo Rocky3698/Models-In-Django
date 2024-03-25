@@ -3,7 +3,7 @@ from . import models
 class StudentForm(forms.ModelForm):
     class Meta:
         model= models.Student
-        fields='__all__'
+        fields=['name','roll','father_name','address']
         labels = {
             'name' : 'Student Name',
             'roll' : 'Student Roll'
